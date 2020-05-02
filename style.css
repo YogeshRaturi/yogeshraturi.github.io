@@ -1,0 +1,165 @@
+html,
+body,
+.view {
+  height: auto;
+  scroll-behavior: smooth;
+}
+#navbar {
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+  transition: top 0.3s;
+}
+header {
+  position: relative;
+  height: 110vh;
+  overflow: hidden;
+}
+
+.header__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+  transform: skewY(-6deg);
+  transform-origin: top left;
+}
+section {
+  position: relative;
+  height: 1800px;
+  overflow: hidden;
+}
+
+.section__bg {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(#ff9d2f, #ff6126);
+  transform: skewY(6deg);
+  transform-origin: top left;
+}
+
+h1,
+h2 {
+  letter-spacing: 5px;
+}
+/* line before and after h1 */
+h1:before,
+h1:after {
+  background-color: #333;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 20%;
+}
+h1:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+h1:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+.h1-line {
+  letter-spacing: 5px;
+}
+.h1-line:before,
+.h1-line:after {
+  background-color: #fff;
+  content: '';
+  display: inline-block;
+  height: 4px;
+  position: relative;
+  vertical-align: middle;
+  width: 20%;
+}
+.h1-line:before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+.h1-line:after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.head-text {
+  font-size: 20px;
+}
+.head-text-2 {
+  font-size: 70px;
+}
+.head-text-3 {
+  font-size: 60px;
+}
+
+.fab:hover {
+  height: 10px;
+}
+.hr-light {
+  border-top: 3px solid #fff;
+  width: 80px;
+}
+.p-size {
+  font-size: 18px;
+  line-height: 30px;
+}
+ol li {
+  font-size: 17px;
+}
+.top-nav-collapse {
+  background-color: transparent !important;
+}
+.scrolling-navbar {
+  background-color: transparent !important;
+}
+.navbar:not(.top-nav-collapse) {
+  background: transparent !important;
+}
+
+@media (min-width: 602px) and (max-width: 991px) {
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+}
+
+@media (min-width: 319px) and (max-width: 600px) {
+  .white-bg {
+    background-color: rgb(221, 107, 1);
+    border-radius: 10px;
+  }
+  .navbar:not(.top-nav-collapse) {
+    background: transparent !important;
+  }
+  header {
+    position: relative;
+    height: 88vh;
+    overflow: hidden;
+  }
+  section {
+    position: relative;
+    height: 1800px;
+    overflow: hidden;
+  }
+
+  .p-size {
+    font-size: 16px;
+    line-height: 28px;
+  }
+  .head-text {
+    font-size: 14px;
+  }
+  .head-text-2 {
+    font-size: 46px;
+  }
+  .head-text-3 {
+    font-size: 28px;
+  }
+}
