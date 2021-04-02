@@ -80,6 +80,10 @@ a:hover {
 .carousel {
   height: 100vh;
 }
+.carousel-item {
+  background-color: #0f0f0fd5;
+  height: 100vh;
+}
 .carousel .carousel-item img {
   height: 100vh;
   background-size: cover;
@@ -183,6 +187,7 @@ section {
   width: 100%;
 }
 .travel-card-bg {
+  background-color: #000000;
   border-radius: 1%;
   background-size: cover;
   background-position: center;
