@@ -302,6 +302,7 @@ section {
   width: 100%;
 }
 .product-card-bg {
+  background-color: #000000;
   background-size: cover;
   background-position: center;
   bottom: 0;
