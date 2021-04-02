@@ -1,0 +1,402 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  word-wrap: break-word;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+}
+html,
+body {
+  background-color: #f8faff;
+}
+a {
+  color: #207a20;
+  text-decoration: none;
+}
+a:hover {
+  text-decoration: none;
+}
+
+.h1-new {
+  color: #1b1b1bec;
+  margin-left: 65px;
+}
+
+.h1-new::before {
+  content: '';
+  border-left: 10px solid #207a20;
+  padding: 0 0 0 15px;
+}
+@media (max-width: 1199px) {
+  .h1-new {
+    color: #1b1b1bec;
+    margin-left: 10px;
+  }
+}
+/*---------------_ N A V I G A T I O N -----__*/
+.nav-logo {
+  width: 160px;
+}
+.nav-item a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #207a20 !important;
+}
+.nav-item a:hover {
+  background-color: #207a20;
+  color: #ffffff !important;
+  transition: 0.4s;
+}
+.dropdown-menu a {
+  font-size: 14px;
+  font-weight: 500;
+  color: #207a20;
+}
+.dropdown-menu a:hover {
+  background-color: #207a20;
+  color: #ffffff;
+}
+/*-----_ M E D I A - Q U I R I E S----------__*/
+@media (max-width: 992px) {
+  .navbar-nav .nav-item {
+    text-align: center;
+  }
+  .dropdown-menu {
+    border: 3px solid #207a20;
+    border-radius: 0;
+    border-top: 0;
+    text-align: center;
+  }
+}
+
+/*-------- N A V I G A T I O N -----*/
+
+/*----- C A R O U S E L -----*/
+
+.carousel {
+  height: 100vh;
+}
+.carousel .carousel-item img {
+  height: 100vh;
+  background-size: cover;
+  min-width: 100%;
+}
+@media (min-width: 500px) and (max-width: 300px) {
+  .carousel {
+    height: 100vh;
+  }
+  .carousel .carousel-item img {
+    height: 100vh;
+  }
+}
+.carousel-caption {
+  position: absolute;
+  right: 15%;
+  bottom: 4rem;
+  left: 15%;
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
+  color: #fff;
+  text-align: left;
+}
+/*----- C A R O U S E L -----*/
+
+section {
+  margin: 80px 0;
+}
+.fs-48 {
+  font-size: 58px;
+  font-weight: 700;
+}
+.bg-translucent p {
+  font-size: 18px;
+  font-weight: 500;
+}
+@media (max-width: 600px) {
+  .fs-48 {
+    font-size: 18px;
+    font-weight: 700;
+  }
+  .bg-translucent p {
+    font-size: 14px;
+    font-weight: 500;
+  }
+}
+.bg-translucent {
+  background-color: #00000083;
+}
+
+/*  */
+/*  */
+/*-----  TRAVEL CARD SECTION --- FOR ADVENTURE -----------  */
+.travel-card-section {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 64px 24px;
+}
+.travel-card-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+@media (max-width: 540px) {
+  .travel-card-section {
+    align-items: flex-start;
+    background-color: transparent;
+    display: flex;
+    min-height: 100%;
+    justify-content: center;
+    padding: 44px 0;
+  }
+  .travel-card-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 14px;
+    grid-row-gap: 14px;
+    max-width: 1200px;
+    width: 100%;
+  }
+}
+@media (min-width: 960px) {
+  .travel-card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+.travel-card {
+  list-style: none;
+  position: relative;
+}
+.travel-card:before {
+  content: '';
+  display: block;
+  padding-bottom: 120%;
+  width: 100%;
+}
+.travel-card-bg {
+  border-radius: 1%;
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+.travel-card:hover .travel-card-bg {
+  transform: scale(1.1) translateZ(0);
+}
+.travel-card-content {
+  width: 100%;
+  left: 0;
+  padding: 24px;
+  position: absolute;
+  bottom: 0;
+}
+.text-travel-card {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.007);
+}
+.text-travel-info {
+  font-size: 11px;
+  font-weight: 500;
+  color: #ffffff;
+}
+.text-travel-card-price {
+  background-color: #fafafa;
+  padding: 5px;
+  color: #207a20;
+  font-size: 14px;
+  font-weight: 600;
+}
+@media (max-width: 540px) {
+  .travel-card:before {
+    content: '';
+    display: block;
+    padding-bottom: 140%;
+    width: 100%;
+  }
+  .travel-card-content {
+    width: 100%;
+    padding: 20px 10px 20px 0;
+  }
+  .text-travel-card {
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    margin: 0 0 0 20px;
+  }
+  .text-travel-info {
+    margin: 0 0 0 20px;
+    padding: 10px 0;
+  }
+  .text-travel-card-price {
+    background-color: #fafafa;
+    padding: 5px 7px;
+    color: #207a20;
+    font-size: 12px;
+    font-weight: 600;
+  }
+}
+/*  */
+/*  */
+/*-----  END --- TRAVEL CARD SECTION --- FOR ADVENTURE -----------  */
+
+/*  */
+/*  */
+/*-----  product CARD SECTION ------------  */
+.product-card-section {
+  align-items: flex-start;
+  background-color: transparent;
+  display: flex;
+  min-height: 100%;
+  justify-content: center;
+  padding: 64px 24px;
+}
+.product-card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: 24px;
+  grid-row-gap: 24px;
+  max-width: 1200px;
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .product-card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media (min-width: 960px) {
+  .product-card-grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.product-card {
+  list-style: none;
+  position: relative;
+}
+.product-card:before {
+  content: '';
+  display: block;
+  padding-bottom: 80%;
+  width: 100%;
+}
+.product-card-bg {
+  background-size: cover;
+  background-position: center;
+  bottom: 0;
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+.product-card:hover .product-card-bg {
+  transform: scale(1.1) translateZ(0);
+}
+.product-card-content {
+  left: 0;
+  padding: 24px;
+  position: absolute;
+  bottom: 0;
+}
+.text-product-card {
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: 600;
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.007);
+}
+
+.text-product-card-price {
+  background-color: #ffffffcc;
+  padding: 5px 7px;
+  color: #207a20;
+  font-size: 16px;
+  font-weight: 600;
+}
+/*  */
+/*  */
+/*-----  END --- product CARD SECTION --- FOR river product -----------  */
+
+/*  */
+/* ---- What are we ----- */
+.p-about {
+  font-size: 16px;
+  font-weight: 500;
+  color: rgba(0, 0, 0, 0.842);
+}
+.btn-white {
+  display: inline;
+  width: 30px;
+  height: 20px;
+  border: 2px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 15px;
+  font-size: 15px;
+  font-weight: 500;
+}
+.btn-white:hover {
+  color: #000;
+  background-color: #ffffff;
+}
+.btn-green {
+  display: inline;
+  width: 30px;
+  height: 20px;
+  border: 1px solid #207a20;
+  border-radius: 0;
+  color: #ffffff;
+  background-color: #207a20;
+  padding: 10px 15px;
+  font-weight: 500;
+}
+.btn-green:hover {
+  color: #207a20;
+  border: 2px solid #207a20;
+  background-color: #ffffff;
+}
+
+/*----- F O O T E R -----*/
+
+.list-unstyled a {
+  font-weight: 500;
+}
+.list-unstyled a:hover {
+  background-color: #207a20;
+  color: #ffffff;
+  transition: 0.4s;
+  text-decoration: none;
+  padding: 2px 5px;
+}
+
+.instagram {
+  color: #c13584;
+}
+.bg-green {
+  background-color: #207a20 !important;
+}
+.text-green {
+  color: #207a20;
+}
+/* limit character in contact --address-- */
+.card-address {
+  max-width: 35ch;
+}
