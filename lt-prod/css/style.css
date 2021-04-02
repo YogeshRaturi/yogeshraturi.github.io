@@ -11,7 +11,7 @@
 }
 html,
 body {
-  background-color: #f8faff;
+  background-color: #ecf0f1;
 }
 a {
   color: #207a20;
@@ -122,7 +122,7 @@ section {
 }
 @media (max-width: 600px) {
   .fs-48 {
-    font-size: 18px;
+    font-size: 28px;
     font-weight: 700;
   }
   .bg-translucent p {
@@ -281,9 +281,13 @@ section {
   max-width: 1200px;
   width: 100%;
 }
-@media (min-width: 540px) {
+@media (max-width: 540px) {
+  .product-card-section {
+    padding: 44px 0;
+  }
   .product-card-grid {
-    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 18px;
+    grid-row-gap: 18px;
   }
 }
 @media (min-width: 960px) {
