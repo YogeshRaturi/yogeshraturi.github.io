@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Poppins:500,600,700,800&display=swap');
 * {
   margin: 0;
   padding: 0;
@@ -11,10 +11,9 @@
 }
 html,
 body {
-  background-color: #ecf0f1;
+  background-color: #f1f2f6;
 }
 a {
-  color: #207a20;
   text-decoration: none;
 }
 a:hover {
@@ -66,9 +65,8 @@ a:hover {
     text-align: center;
   }
   .dropdown-menu {
-    border: 3px solid #207a20;
+    border: 1px solid #24a1249a;
     border-radius: 0;
-    border-top: 0;
     text-align: center;
   }
 }
@@ -368,33 +366,17 @@ section {
   background-color: #ffffff;
 }
 .btn-green {
-  display: inline;
-  width: 30px;
-  height: 20px;
   border: 1px solid #207a20;
   border-radius: 0;
   color: #ffffff;
   background-color: #207a20;
-  padding: 10px 15px;
+  padding: 10px 25px;
   font-weight: 500;
 }
 .btn-green:hover {
   color: #207a20;
   border: 2px solid #207a20;
   background-color: #ffffff;
-}
-
-/*----- F O O T E R -----*/
-
-.list-unstyled a {
-  font-weight: 500;
-}
-.list-unstyled a:hover {
-  background-color: #207a20;
-  color: #ffffff;
-  transition: 0.4s;
-  text-decoration: none;
-  padding: 2px 5px;
 }
 
 .instagram {
@@ -409,4 +391,32 @@ section {
 /* limit character in contact --address-- */
 .card-address {
   max-width: 35ch;
+}
+.char-limit {
+  max-width: 50ch;
+}
+
+/*  */
+/* -------- FOOTER ------------ */
+footer {
+  padding: 120px 0 60px 0;
+  background-color: #207a20;
+  color: #ffffff;
+}
+footer a {
+  color: #ffffff;
+  font-weight: 500;
+}
+
+footer a:hover {
+  background-color: #ffffff;
+  color: #207a20;
+  transition: 0.4s;
+  padding: 2px 5px;
+}
+@media (max-width: 499px) {
+  .footer-copyright {
+    font-size: 14px;
+    font-weight: 500;
+  }
 }
