@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Poppins:400,500,600,700,800&display=swap');
+
 * {
   margin: 0;
   padding: 0;
@@ -65,7 +66,6 @@ a:hover {
   height: 100vh;
 }
 .carousel-item {
-  background-color: #0f0f0fd5;
   height: 100vh;
 }
 .carousel .carousel-item img {
@@ -73,18 +73,18 @@ a:hover {
   background-size: cover;
   min-width: 100%;
 }
-@media (min-width: 500px) and (max-width: 300px) {
+@media (min-width: 300px) and (max-width: 540px) {
   .carousel {
-    height: 100vh;
+    height: 95vh;
   }
   .carousel .carousel-item img {
-    height: 100vh;
+    height: 95vh;
   }
 }
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 8rem;
+  bottom: 30%;
   left: 15%;
   padding-top: 1.25rem;
   padding-bottom: 1.25rem;
@@ -94,17 +94,17 @@ a:hover {
 section {
   margin: 5rem 0;
 }
-.fs-48 {
+.caption-heading {
   font-size: 4rem;
   font-weight: 700;
-  text-shadow: 20px 20px 40px rgba(0, 0, 0, 0.589);
+  text-shadow: 2px 2px 2px #1f1d1dcb;
 }
 .bg-translucent p {
   font-size: 1.1rem;
   font-weight: 500;
 }
 @media (max-width: 600px) {
-  .fs-48 {
+  .caption-heading {
     font-size: 2rem;
     font-weight: 600;
   }
@@ -127,7 +127,7 @@ section {
 }
 .activities-card-grid {
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
+  grid-template-columns: repeat(1, 1fr);
   grid-column-gap: 24px;
   grid-row-gap: 24px;
   max-width: 2400px;
@@ -144,11 +144,9 @@ section {
   }
   .activities-card-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(1, 1fr);
     grid-column-gap: 14px;
     grid-row-gap: 14px;
-    max-width: 1200px;
-    width: 100%;
   }
 }
 @media (min-width: 960px) {
@@ -193,11 +191,12 @@ section {
 }
 .text-activities-card {
   color: #ffffff;
-  font-size: 20px;
-  font-weight: 600;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin: 0 0 0 10px;
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.007);
 }
-.text-activities-info {
+/* .text-activities-info {
   font-size: 11px;
   font-weight: 500;
   color: #ffffff;
@@ -208,25 +207,22 @@ section {
   color: #207a20;
   font-size: 14px;
   font-weight: 600;
-}
+} */
 @media (max-width: 540px) {
+  .activities-card:hover .activities-card-bg {
+    transform: scale(1) translateZ(0);
+  }
   .activities-card:before {
     content: '';
     display: block;
-    padding-bottom: 140%;
+    padding-bottom: 100%;
     width: 100%;
   }
   .activities-card-content {
     width: 100%;
     padding: 20px 10px 20px 0;
   }
-  .text-activities-card {
-    color: #ffffff;
-    font-size: 16px;
-    font-weight: 600;
-    margin: 0 0 0 20px;
-  }
-  .text-activities-info {
+  /* .text-activities-info {
     margin: 0 0 0 20px;
     padding: 10px 0;
   }
@@ -236,7 +232,7 @@ section {
     color: #207a20;
     font-size: 12px;
     font-weight: 600;
-  }
+  } */
 }
 /*  */
 /*-----  TRAVEL CARD SECTION --- FOR ADVENTURE -----------  */
@@ -338,6 +334,9 @@ section {
   font-weight: 600;
 } */
 @media (max-width: 540px) {
+  .travel-card:hover .travel-card-bg {
+    transform: scale(1) translateZ(0);
+  }
   .travel-card:before {
     content: '';
     display: block;
@@ -429,6 +428,11 @@ section {
 }
 .product-card:hover .product-card-bg {
   transform: scale(1.1) translateZ(0);
+}
+@media (max-width: 540px) {
+  .product-card:hover .product-card-bg {
+    transform: scale(1) translateZ(0);
+  }
 }
 .product-card-content {
   left: 0;
